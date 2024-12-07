@@ -12,8 +12,8 @@ package $DAY
 
 EOF
 
-cat <<EOF > $DAY/$DAY_test.go
-package $DAY_test
+cat <<EOF > "$DAY/${DAY}_test.go"
+package ${DAY}_test
 
 EOF
 
