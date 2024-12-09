@@ -17,7 +17,7 @@ func FindAllAntiNodes(input []string) []Coordinate {
 
 	for _, coordinates := range antennaMap {
 		for i, antennaA := range coordinates {
-			for j, antennaB := range coordinates {
+			for j, antennaB := range coordinates[:i] {
 				if i == j {
 					continue
 				}
